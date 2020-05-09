@@ -1,0 +1,9 @@
+<!doctype html>
+<h1>Hello {{ first_name }}</h1>
+
+Here are list of suggestions based on what you watched on Doubtnut.
+<ul>
+    {% for question in questions %}
+    <li> {{ question.question }}</li>
+{% endfor %}
+</ul>
